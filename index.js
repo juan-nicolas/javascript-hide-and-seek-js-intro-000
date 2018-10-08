@@ -22,7 +22,7 @@ function deepestChild(){
   var grandNode = document.querySelector(`#grand-node`)
   var childrenLeft = grandNode.children
 
-  while (childrenLeft.length > 0){
+  while (childrenLeft.length){
     childrenLeft = childrenLeft.children
   }
   return childrenLeft[0]
