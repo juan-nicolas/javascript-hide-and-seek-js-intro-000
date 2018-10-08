@@ -13,7 +13,7 @@ function increaseRankBy(n){
     currentList = rankedLists[i]
     for (var j = 0; j < currentList.children.length; j++){
       let currentNum = currentList.children[j]
-      currentNum.innerHTML += parseInt(n)
+      currentNum.innerHTML = parseInt(currentNum) + n
     }
   }
 }
